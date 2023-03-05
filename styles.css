@@ -1,0 +1,222 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #111;
+  color: #333;
+  margin: 0;
+  padding: 0;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  height: 40px;
+  width: 325px;
+
+  color: rgb(98, 46, 229);
+  text-transform: uppercase;
+  border: 1px solid rgb(98, 46, 229);
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 5px;
+  font-family: "Raleway";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  transition: color 0.25s ease 0.1s;
+}
+
+button:hover {
+  background-image: linear-gradient(
+    270deg,
+    rgb(98, 46, 229) 0%,
+    rgb(166, 131, 255) 100%
+  );
+  animation-name: hoverOutlined;
+  color: rgb(255, 255, 255);
+}
+
+button:not(:hover):not(:disabled) {
+  animation-name: onExitHover;
+}
+
+@keyframes hoverOutlined {
+  0% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0) 0%,
+      rgba(166, 131, 255, 0) 100%
+    );
+  }
+  10% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.1) 0%,
+      rgba(166, 131, 255, 0.1) 100%
+    );
+  }
+  20% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.2) 0%,
+      rgba(166, 131, 255, 0.2) 100%
+    );
+  }
+  30% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.3) 0%,
+      rgba(166, 131, 255, 0.3) 100%
+    );
+  }
+  40% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.4) 0%,
+      rgba(166, 131, 255, 0.4) 100%
+    );
+  }
+  50% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.5) 0%,
+      rgba(166, 131, 255, 0.5) 100%
+    );
+  }
+  60% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.6) 0%,
+      rgba(166, 131, 255, 0.6) 100%
+    );
+  }
+  70% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.7) 0%,
+      rgba(166, 131, 255, 0.7) 100%
+    );
+  }
+  80% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.8) 0%,
+      rgba(166, 131, 255, 0.8) 100%
+    );
+  }
+  90% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.9) 0%,
+      rgba(166, 131, 255, 0.9) 100%
+    );
+  }
+
+  100% {
+    background-image: linear-gradient(
+      270deg,
+      rgb(98, 46, 229) 0%,
+      rgb(166, 131, 255) 100%
+    );
+  }
+}
+
+@keyframes onExitHover {
+  0% {
+    background-image: linear-gradient(
+      270deg,
+      rgb(98, 46, 229) 0%,
+      rgb(166, 131, 255) 100%
+    );
+  }
+
+  10% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.9) 0%,
+      rgba(166, 131, 255, 0.9) 100%
+    );
+  }
+
+  20% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.8) 0%,
+      rgba(166, 131, 255, 0.8) 100%
+    );
+  }
+
+  30% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.7) 0%,
+      rgba(166, 131, 255, 0.7) 100%
+    );
+  }
+
+  40% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.6) 0%,
+      rgba(166, 131, 255, 0.6) 100%
+    );
+  }
+
+  50% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.5) 0%,
+      rgba(166, 131, 255, 0.5) 100%
+    );
+  }
+
+  60% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.4) 0%,
+      rgba(166, 131, 255, 0.4) 100%
+    );
+  }
+
+  70% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.3) 0%,
+      rgba(166, 131, 255, 0.3) 100%
+    );
+  }
+
+  80% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.2) 0%,
+      rgba(166, 131, 255, 0.2) 100%
+    );
+  }
+
+  90% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0.1) 0%,
+      rgba(166, 131, 255, 0.1) 100%
+    );
+  }
+
+  100% {
+    background-image: linear-gradient(
+      270deg,
+      rgba(98, 46, 229, 0) 0%,
+      rgba(166, 131, 255, 0) 100%
+    );
+  }
+}
